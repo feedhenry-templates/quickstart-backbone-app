@@ -55,6 +55,11 @@ App.View.CountView = Backbone.View.extend({
 });
 
 
+/**
+ * Listening for the `fhinit` event triggered by the Feedhenry Javascript SDK before initialising the `Count` View.
+ *
+ * This event must have been triggered before using the $fh Client API functions.
+ */
 $fh.on('fhinit', function(){
   App.views.count = new App.View.CountView();
 });
