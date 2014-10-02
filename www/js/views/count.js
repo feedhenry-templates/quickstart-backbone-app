@@ -48,6 +48,7 @@ App.View.CountView = Backbone.View.extend({
     }
 
     if(characters){
+      //Calling the "cloud" helper function to call the $fh.cloud endpoint.
       App.helpers.cloud("count", characters, success, error);
     }
   }
