@@ -16,15 +16,9 @@ App.helpers.cloud = function(cloudEndpoint, userInput, successCb, errCb){
     path: cloudEndpoint,
     type: "GET",
     contentType: "application/json",
-    hello: userInput,
+    data: {hello: userInput},
     timeout: 15000
   };
 
-  $fh.cloud({
-      path: cloudEndpoint,
-      data: params
-    },
-    successCb,
-    errCb
-  );
+  $fh.cloud(params, successCb, errCb);
 }
