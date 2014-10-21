@@ -10,11 +10,11 @@ App.helpers.cloud = function(cloudEndpoint, userInput, successCb, errCb){
    * In this case, the cloudEndpoint is "hello", but any cloud endpoint you have exposed can be accessed
    * using the $fh.cloud.
    *
-   * @type {{path: string, type: string, contentType: string, data: {userInput: *}, timeout: number}}
+   * @type {{path: string, method: string, contentType: string, data: {userInput: *}, timeout: number}}
    */
   var params = {
     path: cloudEndpoint,
-    type: "GET",
+    method: "GET",
     contentType: "application/json",
     data: {hello: userInput},
     timeout: 15000
