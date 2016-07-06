@@ -1,3 +1,8 @@
+var App = require('./init');
+var $fh = require('fh-js-sdk');
+var Backbone = require('backbone');
+var _ = require('underscore');
+
 /**
  * A Backbone View to handle accepting the user input and calling the "cloud" helper function to send the characters
  * to the cloud.
