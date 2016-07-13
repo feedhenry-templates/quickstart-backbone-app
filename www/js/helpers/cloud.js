@@ -1,8 +1,10 @@
+var App = require('./init');
+var $fh = require('fh-js-sdk');
 /**
  * Helper function to allow access to the $fh.cloud Client API function from anywhere in the app.
  */
 
-App.helpers.cloud = function(cloudEndpoint, userInput, successCb, errCb){
+App.helpers.cloud = function (cloudEndpoint, userInput, successCb, errCb) {
 
   /**
    * Sending a POST request to the cloudEndpoint.
@@ -16,9 +18,9 @@ App.helpers.cloud = function(cloudEndpoint, userInput, successCb, errCb){
     path: cloudEndpoint,
     method: "GET",
     contentType: "application/json",
-    data: {hello: userInput},
+    data: { hello: userInput },
     timeout: 15000
   };
 
   $fh.cloud(params, successCb, errCb);
-}
+};
