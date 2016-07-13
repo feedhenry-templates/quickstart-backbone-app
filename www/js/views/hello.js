@@ -1,4 +1,4 @@
-var App = require('./init');
+var App = require('../helpers/init');
 var $fh = require('fh-js-sdk');
 var Backbone = require('backbone');
 var _ = require('underscore');
