@@ -1,5 +1,3 @@
-var App = require('./init');
-var $fh = require('fh-js-sdk');
 /**
  * Helper function to allow access to the $fh.cloud Client API function from anywhere in the app.
  */

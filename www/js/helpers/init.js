@@ -3,4 +3,8 @@ App.View = {};
 App.helpers = {};
 App.views = {};
 
-module.exports = App;
+window.$fh = require('fh-js-sdk');
+window.Backbone = require('backbone');
+window._ = require('underscore');
+
+window.App = App;
