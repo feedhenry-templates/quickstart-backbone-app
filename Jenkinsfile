@@ -12,7 +12,7 @@ CODE_SIGN_PROFILE_ID = params?.BUILD_CREDENTIAL_ID?.trim()   // e.g. "redhat-dis
 //CODE_SIGN_PROFILE_ID = "redhat-dist-dp"
 //BUILD_CONFIG = "debug"
 
-// sample values commented below are for https://github.com/feedhenry-templates/quickstart-angular-app
+// sample values commented below are for https://github.com/feedhenry-templates/quickstart-backbone-app
 /* ------------- use these to hardcode values in Jenkinsfile ---------------- */
 PROJECT_NAME = "QuickStart Backbone"
 CLEAN = true                          // Do a clean build and sign
